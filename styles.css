@@ -41,31 +41,70 @@ nav {
 .logo-text {
     font-size: 24px;
     font-weight: bold;
-    margin-left: 10px; /* Add some spacing between the image and text */
+    margin-left: 10px;
 }
 
-ul {
+.menu {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-ul li {
+.menu li {
     margin-right: 20px;
 }
 
-ul li:last-child {
+.menu li:last-child {
     margin-right: 0;
 }
 
-ul li a {
+.menu a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold; /* Make the menu items more prominent */
+    font-weight: bold;
 }
 
-ul li a:hover {
-    color: #9F65A4; /* Add a subtle hover effect */
+.menu a:hover {
+    color: #9F65A4;
 }
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #2C3D63;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        padding: 20px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
 
 /* Hero section styles */
 .hero {
