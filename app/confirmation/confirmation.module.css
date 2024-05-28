@@ -1,0 +1,62 @@
+/* signup.module.css */
+
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff; /* Set the background color to white or any other color you prefer */
+  }
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .signupHeading {
+    color: #2c3d63;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .formContainer {
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  .formGroup {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    width: 100%;
+    background-color: #2c3d63;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+  }
+  
+  .button:hover {
+    background-color: #9f65a4;
+  }
+  

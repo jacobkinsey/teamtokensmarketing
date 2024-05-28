@@ -1,0 +1,28 @@
+/* Style the support section */
+.support {
+    background-color: #9F65A4; /* Add a background color */
+    color: #fff; /* Set text color to white */
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .support h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .support p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Style links within the support paragraph */
+  .support a {
+    color: #fff; /* Set link color to white */
+    text-decoration: underline;
+  }
+  
+  /* On hover, remove underline from links */
+  .support a:hover {
+    text-decoration: none;
+  }

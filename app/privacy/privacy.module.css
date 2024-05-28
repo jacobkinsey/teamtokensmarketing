@@ -1,0 +1,33 @@
+/* Apply modern styling to the main content container */
+.privacyContainer {
+    margin: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .privacyContainer h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .privacyContainer h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .privacyContainer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .privacyContainer ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .addressInfo {
+    font-size: 16px;
+  }

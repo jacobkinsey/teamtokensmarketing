@@ -1,0 +1,51 @@
+/* Style the about section */
+.about {
+    background-color: #f5f5f5; /* Add a background color */
+    padding: 60px 0;
+    text-align: center;
+    color: black;
+  }
+  
+  .aboutContainer {
+    display: flex;
+    flex-direction: row; /* Display image and text in a row */
+    align-items: center; /* Center align content vertically */
+    justify-content: space-evenly; /* Evenly space items horizontally */
+  }
+  
+  .about h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+  }
+  
+  .aboutImage {
+    width: 50%; /* Adjust the image width as needed */
+    max-width: 400px; /* Set a max-width to maintain image quality */
+    margin-right: 20px; /* Add spacing between image and text */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    border-radius: 5px; /* Add rounded corners to the image */
+  }
+  
+  .about p {
+    width: 50%; /* Adjust the text width as needed */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 20px; /* Add spacing between image and text */
+    text-align: start;
+  }
+  
+  /* Responsive design: Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column; /* Stack image on top of text for small screens */
+        align-items: center;
+    }
+  
+    .aboutImage,
+    .about p {
+        width: 100%; /* Make image and text full width for small screens */
+        margin: 10px 0; /* Add spacing between elements */
+    }
+  
+  }
