@@ -59,7 +59,7 @@ export default function Privacy() {
       <h2>Cookies and Tracking</h2>
       <p>TeamTokens does not use cookies or tracking technologies.</p>
 
-      <h2>Children's Privacy</h2>
+      <h2>Children&apos;s Privacy</h2>
       <p>
         TeamTokens is not intended for use by children under 13 years of age. We
         do not knowingly collect personal information from minors without

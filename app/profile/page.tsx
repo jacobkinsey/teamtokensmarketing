@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./profile.module.css";
 import { useSession } from "next-auth/react";
 import StartCompanyModal from "../components/modals/startCompany";
+import Image from "next/image";
 
 interface Company {
   name: string;
@@ -69,7 +70,7 @@ export default function Profile() {
 
   const profileDetails = (
     <>
-      <img src="/avatar.png" alt="" className={styles.avatar} />
+      <Image src="/avatar.png" alt="" className={styles.avatar} />
       <div className={styles.username}>{session?.user?.name ?? ""}</div>
       <div className={styles.email}>{session?.user?.email ?? ""}</div>
     </>
@@ -106,7 +107,7 @@ export default function Profile() {
           className={styles.companyItem}
         >
           {company.logo ? (
-            <img
+            <Image
               src={company.logo}
               alt={`Logo for ${company.name}`}
               className={styles.companyLogo}

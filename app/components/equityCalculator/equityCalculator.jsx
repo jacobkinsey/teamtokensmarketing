@@ -189,10 +189,11 @@ const EquityCalculator = () => {
                   <p>
                     Fixed equity is a traditional method of allocating ownership
                     shares in a company. In this model, equity distribution is
-                    determined and fixed at the company's formation or when new
-                    shareholders join. Each founder or investor is assigned a
-                    specific percentage of the company's equity, which typically
-                    remains unchanged unless further negotiations occur.
+                    determined and fixed at the company&apos;s formation or when
+                    new shareholders join. Each founder or investor is assigned
+                    a specific percentage of the company&apos;s equity, which
+                    typically remains unchanged unless further negotiations
+                    occur.
                   </p>
                 </div>
               )}

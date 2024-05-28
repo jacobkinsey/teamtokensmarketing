@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 import styles from "./signup.module.css";
 import { error } from "console";
+import Image from "next/image";
 
 interface FormData {
   username: string;
@@ -12,7 +13,7 @@ interface FormData {
 }
 
 const Signup: React.FC = () => {
-    const router = useRouter();
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     username: "",
     email: "",
@@ -28,40 +29,40 @@ const Signup: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    const url = 'https://teamtokens.dev/api/v1/auth/register';
+    const url = "https://teamtokens.dev/api/v1/auth/register";
     const payload = {
-        username: formData?.username,
-        email: formData?.email,
-        password: formData?.password,
+      username: formData?.username,
+      email: formData?.email,
+      password: formData?.password,
     };
 
     const data = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload)
-    }
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    };
 
     try {
-        const response = await fetch(url, data)
-        if (response.ok) {
-            const responseBody = await response.json();
-            console.log("Register: ",responseBody);
-            router.push(`/confirmation?username=${formData.username}`);
-        } else {
-            const errorResponse = await response.json();
-            console.error("Error: ", errorResponse);
-        }
+      const response = await fetch(url, data);
+      if (response.ok) {
+        const responseBody = await response.json();
+        console.log("Register: ", responseBody);
+        router.push(`/confirmation?username=${formData.username}`);
+      } else {
+        const errorResponse = await response.json();
+        console.error("Error: ", errorResponse);
+      }
     } catch (error) {
-        console.error('Error: ', error);
+      console.error("Error: ", error);
     }
   };
 
   return (
     <div className={styles.signupContainer}>
       <div className={styles.logo}>
-        <img src="/logo.png" alt="Logo" />
+        <Image src="/logo.png" alt="Logo" />
       </div>
       <div className={styles.formContainer}>
         <form onSubmit={handleSubmit} className={styles.formGroup}>

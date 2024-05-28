@@ -60,7 +60,7 @@ export default function Dashboard() {
     getTransactions();
     getProposals();
     // get list of proposals
-  }, []);
+  });
 
   // companies/tokens/:id
   const getTokens = async () => {
